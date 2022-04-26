@@ -1,0 +1,20 @@
+ <launch>
+
+    <node pkg="rosbag" type="record" name="rosbag_record_all"
+        args="record -o /home/jurrian/rosbags/mar18/all 
+        /imu_rgb_stereo/color/image/compressed 
+        /imu_rgb_stereo/imu 
+        /imu_rgb_stereo/right/image_rect/compressed 
+        /imu_rgb_stereo/left/image_rect/compressed
+        /imu_rgb_stereo/color/camera_info
+        /imu_rgb_stereo/stereo/camera_info
+        /tf
+        /tf_static
+        /rtabmap/cloud_map
+        /rtabmap/mapPath
+
+        
+        "/>
+
+
+</launch>

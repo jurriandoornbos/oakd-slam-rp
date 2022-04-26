@@ -1,0 +1,12 @@
+ <launch>
+
+    <node pkg="rosbag" type="record" name="rosbag_record_pcl"
+        args="record -o /home/jurrian/rosbags/mar18/pclpath 
+        /rtabmap/cloud_map
+        /rtabmap/mapPath
+
+        
+        "/>
+
+
+</launch>

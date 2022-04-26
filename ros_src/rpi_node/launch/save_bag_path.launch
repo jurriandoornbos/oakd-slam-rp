@@ -1,0 +1,14 @@
+ <launch>
+
+    <node pkg="rosbag" type="record" name="rosbag_record_paths"
+        args="record -o /home/jurrian/rosbags/mar18/paths 
+        /tf_static
+        /rtabmap/global_path
+        /rtabmap/local_path
+        /rtabmap/localization_pose
+        /rtabmap/rtabmap/odom
+        /rtabmap/odom_info
+        "/>
+
+
+</launch>

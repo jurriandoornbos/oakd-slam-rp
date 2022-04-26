@@ -1,0 +1,5 @@
+topics:
+  -
+    topic: /rtabmap/rtabmap/odom  # ROS1 topic name
+    type: nav_msgs/Odometry  # ROS2 type name
+    queue_size: 1  # For the publisher back to ROS1

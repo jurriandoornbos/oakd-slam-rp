@@ -1,0 +1,13 @@
+ <launch>
+
+    <node pkg="rosbag" type="record" name="rosbag_record_cam"
+        args="record -o /home/jurrian/rosbags/mar18/cams 
+        /imu_rgb_stereo/imu 
+        /imu_rgb_stereo/stereo/depth/compressed
+        /imu_rgb_stereo/colour/image/compressed
+        /imu_rgb_stereo/colour/camera_info
+        /imu_rgb_stereo/stereo/camera_info
+        "/>
+
+
+</launch>
